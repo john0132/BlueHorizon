@@ -18,8 +18,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             LanguageSeeder::class,
             CurrencySeeder::class,
+            RolePermissionSeeder::class,
+            UserSeeder::class,
         ]);
 
+        // Keep a sample user for testing; roles will be assigned in UserSeeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\Languages\Pages;
+namespace App\Filament\Resources\Currencies\Pages;
 
-use App\Filament\Resources\Languages\LanguageResource;
+use App\Filament\Resources\Currencies\CurrencyResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditLanguage extends EditRecord
+class EditCurrency extends EditRecord
 {
-    protected static string $resource = LanguageResource::class;
+    protected static string $resource = CurrencyResource::class;
 
     protected function getHeaderActions(): array
     {

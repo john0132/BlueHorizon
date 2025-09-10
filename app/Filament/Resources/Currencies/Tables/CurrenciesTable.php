@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Languages\Tables;
+namespace App\Filament\Resources\Currencies\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -9,16 +9,19 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
-class LanguagesTable
+class CurrenciesTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('name')
+                TextColumn::make('code')
                     ->searchable(),
-                TextColumn::make('locale')
+                TextColumn::make('symbol')
                     ->searchable(),
+                TextColumn::make('rate')
+                    ->numeric()
+                    ->sortable(),
                 IconColumn::make('is_active')
                     ->boolean(),
                 TextColumn::make('created_at')

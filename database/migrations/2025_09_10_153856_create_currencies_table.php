@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('symbol');
             $table->float('rate')->default(1);
             $table->boolean('is_active')->default(false);
+            $table->boolean('is_default')->default(false);
             $table->timestamps();
         });
     }

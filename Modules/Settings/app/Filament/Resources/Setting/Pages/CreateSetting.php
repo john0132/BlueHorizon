@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\Settings\Pages;
+namespace Modules\Settings\Filament\Resources\Setting\Pages;
 
-use App\Filament\Resources\Settings\SettingResource;
+use Modules\Settings\Filament\Resources\Setting\SettingResource;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateSetting extends CreateRecord
@@ -15,7 +15,4 @@ class CreateSetting extends CreateRecord
             $this->getCreateFormAction()->label('Create'),
         ];
     }
-
-
-
 }

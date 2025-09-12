@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\Settings\Pages;
+namespace Modules\Settings\Filament\Resources\Setting\Pages;
 
-use App\Filament\Resources\Settings\SettingResource;
+use Modules\Settings\Filament\Resources\Setting\SettingResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Filament\Resources\Settings;
+namespace Modules\Settings\Filament\Resources\Setting;
 
-use App\Filament\Resources\Settings\Pages\CreateSetting;
-use App\Filament\Resources\Settings\Pages\EditSetting;
-use App\Filament\Resources\Settings\Pages\ListSettings;
-use App\Filament\Resources\Settings\Schemas\SettingForm;
-use App\Filament\Resources\Settings\Tables\SettingsTable;
-use App\Models\Setting;
+use Modules\Settings\Filament\Resources\Setting\Pages\CreateSetting;
+use Modules\Settings\Filament\Resources\Setting\Pages\EditSetting;
+use Modules\Settings\Filament\Resources\Setting\Pages\ListSettings;
+use Modules\Settings\Filament\Resources\Setting\Schemas\SettingForm;
+use Modules\Settings\Filament\Resources\Setting\Tables\SettingsTable;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Modules\Settings\Models\Setting;
 use UnitEnum;
 
 class SettingResource extends Resource

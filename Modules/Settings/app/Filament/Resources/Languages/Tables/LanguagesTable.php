@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Languages\Tables;
+namespace Modules\Settings\Filament\Resources\Languages\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -20,7 +20,7 @@ class LanguagesTable
                     ->searchable(),
                 TextColumn::make('locale')
                     ->searchable(),
-                ToggleColumn::make('is_active')->visible(fn() => Auth::user()->can('Enable/disable:Language')),
+                ToggleColumn::make('is_active')->visible(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

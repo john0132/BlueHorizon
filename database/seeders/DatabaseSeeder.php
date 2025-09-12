@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Modules\Settings\Database\Seeders\SettingsDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,10 +16,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         $this->call([
-            LanguageSeeder::class,
-            CurrencySeeder::class,
             RolePermissionSeeder::class,
             UserSeeder::class,
+            SettingsDatabaseSeeder::class,
         ]);
 
         // Keep a sample user for testing; roles will be assigned in UserSeeder

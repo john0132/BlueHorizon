@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Filament\Resources\Settings\Pages;
+namespace Modules\Settings\Filament\Resources\Setting\Pages;
 
-use App\Filament\Resources\Settings\SettingResource;
-use App\Models\Setting;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Modules\Settings\Filament\Resources\Setting\SettingResource;
+use Modules\Settings\Models\Setting;
 
 class ListSettings extends ListRecords
 {

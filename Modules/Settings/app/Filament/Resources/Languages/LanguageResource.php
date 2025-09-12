@@ -1,18 +1,20 @@
 <?php
 
-namespace App\Filament\Resources\Languages;
+namespace Modules\Settings\Filament\Resources\Languages;
 
-use App\Filament\Resources\Languages\Pages\CreateLanguage;
-use App\Filament\Resources\Languages\Pages\EditLanguage;
-use App\Filament\Resources\Languages\Pages\ListLanguages;
+
 use App\Filament\Resources\Languages\Schemas\LanguageForm;
-use App\Filament\Resources\Languages\Tables\LanguagesTable;
-use App\Models\Language;
+use Modules\Settings\Filament\Resources\Languages\Pages\CreateLanguage;
+
+use Modules\Settings\Filament\Resources\Languages\Tables\LanguagesTable;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Modules\Settings\Filament\Resources\Languages\Pages\EditLanguage;
+use Modules\Settings\Filament\Resources\Languages\Pages\ListLanguages;
+use Modules\Settings\Models\Language;
 use UnitEnum;
 
 class LanguageResource extends Resource

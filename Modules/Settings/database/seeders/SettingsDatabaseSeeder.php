@@ -14,6 +14,7 @@ class SettingsDatabaseSeeder extends Seeder
          $this->call([
              CurrencySeeder::class,
              LanguageSeeder::class,
+             CountrySeeder::class,
          ]);
     }
 }

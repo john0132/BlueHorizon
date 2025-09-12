@@ -10,7 +10,5 @@ class Language extends Model
       'locale',
       'name',
       'is_active'
-
-
     ];
 }

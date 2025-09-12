@@ -22,12 +22,11 @@ class ListSettings extends ListRecords
     {
         $setting = Setting::first();
         if ($setting) {
-            redirect()->route('filament.admin.resources.settings.edit', [
+            $this->redirect(SettingResource::getUrl('edit', [
                 'record' => $setting->getKey(),
-            ]);
-        }
-        else{
-            redirect()->route('filament.admin.resources.settings.create');
+            ]));
+        } else {
+            $this->redirect(SettingResource::getUrl('create'));
         }
     }
 

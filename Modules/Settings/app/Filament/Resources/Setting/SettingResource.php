@@ -23,6 +23,10 @@ class SettingResource extends Resource
 
     protected static string | UnitEnum | null $navigationGroup = 'Settings';
 
+    protected static ?string $label = 'System Configurations';
+
+    protected static ?int $navigationSort = 1;
+
     protected static ?string $recordTitleAttribute = 'Setting';
 
     public static function form(Schema $schema): Schema

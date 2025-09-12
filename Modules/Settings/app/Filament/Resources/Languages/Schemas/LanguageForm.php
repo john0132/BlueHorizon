@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Languages\Schemas;
+namespace Modules\Settings\Filament\Resources\Languages\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;

@@ -23,6 +23,8 @@ class CurrencyResource extends Resource
 
     protected static string | UnitEnum | null $navigationGroup = 'Settings';
 
+    protected static ?int $navigationSort = 3;
+
     protected static ?string $recordTitleAttribute = 'code';
 
     public static function form(Schema $schema): Schema

@@ -25,6 +25,8 @@ class LanguageResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Language';
 
+    protected static ?int $navigationSort = 2 ;
+
     public static function form(Schema $schema): Schema
     {
         return LanguageForm::configure($schema);

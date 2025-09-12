@@ -121,7 +121,7 @@ return [
         'generate' => true,
         'methods' => [
             'viewAny', 'view', 'create', 'update', 'delete', 'restore',
-            'forceDelete', 'forceDeleteAny', 'restoreAny', 'replicate', 'reorder','enable/disable'
+            'forceDelete', 'forceDeleteAny', 'restoreAny', 'replicate', 'reorder','enableOrDisable'
         ],
         'single_parameter_methods' => [
             'viewAny',

@@ -5,9 +5,10 @@ namespace App\Filament\Resources\Currencies\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 
 class CurrenciesTable
 {
@@ -22,8 +23,7 @@ class CurrenciesTable
                 TextColumn::make('rate')
                     ->numeric()
                     ->sortable(),
-                IconColumn::make('is_active')
-                    ->boolean(),
+                ToggleColumn::make('is_active')->visible(fn() => Auth::user()->can('Enable/disable:Currency')),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

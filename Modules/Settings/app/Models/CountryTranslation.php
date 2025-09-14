@@ -14,7 +14,9 @@ class CountryTranslation extends Model
      * The attributes that are mass assignable.
      */
     protected $fillable = [
-        'name'
+        'name',
+        'language_id',
+        'country_id',
     ];
 
     // protected static function newFactory(): CountryTranslationFactory

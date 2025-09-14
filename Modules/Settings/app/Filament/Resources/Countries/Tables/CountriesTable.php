@@ -15,7 +15,7 @@ class CountriesTable
     {
         return $table
             ->columns([
-                TextColumn::make('translations.name'),
+                TextColumn::make('translation.name'),
                 TextColumn::make('code')->label('Code'),
                 ImageColumn::make('flag')->label('Image'),
             ])

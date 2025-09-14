@@ -15,7 +15,7 @@ class LanguageSeeder extends Seeder
         $languages = [
             ['name' => 'English', 'locale' => 'en', 'is_active' => true],
             ['name' => 'Arabic',  'locale' => 'ar', 'is_active' => true],
-            ['name' => 'German',  'locale' => 'de', 'is_active' => true],
+            ['name' => 'German',   'locale' => 'du', 'is_active' => true],
         ];
 
         foreach ($languages as $lang) {

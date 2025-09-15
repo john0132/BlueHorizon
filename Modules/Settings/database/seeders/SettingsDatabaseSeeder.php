@@ -15,6 +15,7 @@ class SettingsDatabaseSeeder extends Seeder
              CurrencySeeder::class,
              LanguageSeeder::class,
              CountrySeeder::class,
+             CitySeeder::class,
          ]);
     }
 }

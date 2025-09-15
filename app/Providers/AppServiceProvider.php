@@ -48,8 +48,6 @@ class AppServiceProvider extends ServiceProvider
         // Ensure content_locale is initialized on first request
         if (! session()->has('content_locale')) {
             $preferred = request()->cookie('filament_language_switch_locale')
-                ?? request()->get('locale')
-                ?? LanguageSwitch::make()->getUserPreferredLocale()
                 ?? config('app.locale');
             $allowed = array_keys($locales);
             if (! in_array($preferred, $allowed, true)) {

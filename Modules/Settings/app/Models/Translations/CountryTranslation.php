@@ -1,9 +1,10 @@
 <?php
 
-namespace Modules\Settings\Models;
+namespace Modules\Settings\Models\Translations;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
 // use Modules\Settings\Database\Factories\CountryTranslationFactory;
 
 class CountryTranslation extends Model

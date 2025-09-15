@@ -5,8 +5,8 @@ namespace Modules\Settings\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Modules\Settings\Models\Country;
-use Modules\Settings\Models\CountryTranslation;
 use Modules\Settings\Models\Language;
+use Modules\Settings\Models\Translations\CountryTranslation;
 
 class CountrySeeder extends Seeder
 {

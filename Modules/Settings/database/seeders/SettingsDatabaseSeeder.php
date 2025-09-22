@@ -16,6 +16,7 @@ class SettingsDatabaseSeeder extends Seeder
              LanguageSeeder::class,
              CountrySeeder::class,
              CitySeeder::class,
+             AreaSeeder::class,
          ]);
     }
 }

@@ -13,14 +13,17 @@ class CurrencySeeder extends Seeder
     public function run(): void
     {
         $currencies = [
-            ['code' => 'EGP', 'symbol' => 'E£', 'rate' => 1, 'is_active' => true],
-            ['code' => 'USD', 'symbol' => '$',  'rate' => 1, 'is_active' => true],
-            ['code' => 'EUR', 'symbol' => '€',  'rate' => 1, 'is_active' => true],
+            ['name' => 'Egyptian Pound','code' => 'EGP', 'symbol' => 'E£', 'rate' => 1, 'is_active' => true],
+            ['name' => 'United States Dollar','code' => 'USD', 'symbol' => '$',  'rate' => 1, 'is_active' => true],
+            ['name' => 'Euro','code' => 'EUR', 'symbol' => '€',  'rate' => 1, 'is_active' => true],
         ];
 
         foreach ($currencies as $cur) {
             Currency::updateOrCreate(
-                ['code' => $cur['code']],
+                [
+                'code' => $cur['code'],
+                'name' => $cur['name']
+                ],
                 [
                     'symbol' => $cur['symbol'],
                     'rate' => $cur['rate'],

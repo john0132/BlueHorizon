@@ -16,6 +16,7 @@ class CurrenciesTable
     {
         return $table
             ->columns([
+                TextColumn::make('name'),
                 TextColumn::make('code')
                     ->searchable(),
                 TextColumn::make('symbol')

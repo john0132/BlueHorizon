@@ -20,6 +20,8 @@ class CurrencyForm
                     Toggle::make('is_default')
                         ->label('Default Currency')
                         ->required(),
+                    TextInput::make('name')
+                       ->required(),
                     TextInput::make('code')
                         ->required(),
                     TextInput::make('symbol')
